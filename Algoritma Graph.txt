@@ -1,0 +1,25 @@
+Mulai
+
+buat class edge dengan atribut 
+    - vertex target
+    - double bobot
+    - constructor dengan parameter vertex argTarget dan double argBobot
+        set target dengan argTarget
+        set bobot dengan argBobot
+
+buat class Vertex dengan tipe comparable vertex. 
+    tambahkan atribut 
+        - string name
+        - array adgacencies dengan tipe edge
+        - double minDistance dengan inisialisasi Double.POSITIVE_INFINITY
+        - vertex previous
+
+    constructor vertex dengan parameter string argName
+            set nama dengan argName
+    
+    overide method toString dengan me return atribut name
+
+    overide method compareTo dengan parameter vertex other
+        return compare atribut minDistance dari class Vertex dan dari vertex other
+        
+Selesai

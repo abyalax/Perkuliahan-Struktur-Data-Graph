@@ -1,0 +1,19 @@
+Program diatas adalah implementasi dari sebuah graph yang menggunakan algoritma Dijkstra untuk menemukan jalur terpendek antara simpul-simpul (vertex) di dalam graph. Program tersebut terdiri dari beberapa class berikut :
+
+1. class petaGraph: Ini adalah class utama yang mendefinisikan graph. Graph terdiri dari simpul-simpul (vertex) dan sisi-sisi (edge).
+
+2. class Edge: class ini mendefinisikan sisi dalam graph. Setiap sisi memiliki simpul tujuan (target) dan bobot (bobot).
+
+3. class Vertex: class ini mendefinisikan simpul dalam graph. Setiap simpul memiliki nama (name), daftar sisi yang terhubung (adgacencies), jarak minimum dari simpul sumber (minDistance), dan simpul sebelumnya dalam jalur terpendek (previous).
+
+4. class Dijkstra: class ini mengandung metode untuk menghitung jalur terpendek dari simpul sumber ke semua simpul lainnya menggunakan algoritma Dijkstra.
+
+5. Metode getShortestPathTo: Metode ini menghasilkan jalur terpendek dari simpul sumber ke simpul target dengan mengikuti simpul-simpul sebelumnya dari target ke sumber.
+
+6. Metode pathToString: Metode ini mengubah daftar simpul dalam jalur menjadi representasi string.
+
+7. Metode toString dalam class petaGraph: Metode ini menghasilkan representasi string dari graph dengan menampilkan semua simpul dan sisi yang terhubung.
+
+8. Metode main: Metode ini membuat contoh graph, mendefinisikan simpul-simpul, menambahkan sisi-sisi antara simpul-simpul, dan kemudian mencetak representasi graph.
+
+Secara keseluruhan, program ini membuat graph dengan simpul-simpul yang mewakili kota-kota, menambahkan sisi-sisi yang mewakili jarak antara kota-kota tersebut, dan mengimplementasikan algoritma Dijkstra untuk mencari jalur terpendek antara dua simpul dalam graph.

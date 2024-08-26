@@ -1,0 +1,19 @@
+memulai dari vertex source,
+set minDistance ( jarak minimum ) dari vertex source dengan 0,
+Inisialisasi priority queue dengan nama vertexQueue,
+Tambahkan vertex source ke priority queue (vertexQueue)
+
+while priority queue tidak kosong,
+	ambil vertex u dari vertexQueue ( mengambil head queue dan menghapusnya )
+
+	Lakukan perulangan untuk setiap edge ( e ) di vertex u.adgacencies
+		Dapatkan target simpul v (Vertex v = e.target;) dan bobot edge (double bobot = e.bobot).
+		Hitung distanceThroughU = u.minDistance + bobot ( double )
+		Jika hasil distanceThroughU kurang dari v.minDistance ? maka 
+
+		 True = Hapus vertex v dari priority queue ( jika ada )
+			Set v.minDistance = distanceThroughU
+			Set v.previous = u
+			Tambahkan v ke priority queue ( vertexQueue.add(v) )
+			
+		 False = Kembali ke perulangan
